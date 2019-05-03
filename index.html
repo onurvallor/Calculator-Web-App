@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator Web-App</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="calculator">
+
+      <form class="form" name="form">
+        <input name="equation" class="equation" placeholder="0">
+      </form>
+
+      <div class="keys">
+
+
+          <button type="button" name="button" class="operator" value="+" onclick="insert('+')">+</button>
+          <button type="button" name="button" class="operator" value="-" onclick="insert('-')">-</button>
+          <button type="button" name="button" class="operator" value="*" onclick="insert('*')">x</button>
+          <button type="button" name="button" class="operator" value="/" onclick="insert('/')">/</button>
+
+          <button type="button" name="button" class="number" value="7" onclick="insert('7')">7</button>
+          <button type="button" name="button" class="number" value="8" onclick="insert('8')">8</button>
+          <button type="button" name="button" class="number" value="9" onclick="insert('9')">9</button>
+          <button type="button" name="button" class="number" value="4" onclick="insert('4')">4</button>
+          <button type="button" name="button" class="number" value="5" onclick="insert('5')">5</button>
+          <button type="button" name="button" class="number" value="6" onclick="insert('6')">6</button>
+          <button type="button" name="button" class="number" value="1" onclick="insert('1')">1</button>
+          <button type="button" name="button" class="number" value="2" onclick="insert('2')">2</button>
+          <button type="button" name="button" class="number" value="3" onclick="insert('3')">3</button>
+
+          <button type="button" name="button" class="clear" onclick="reset()">C</button>
+          <button type="button" name="button" class="zero" value="0" onclick="insert('0')">0</button>
+          <button type="button" name="button" class="equal" onclick="equal()">=</button>
+          <button type="button" name="button" class="decimal" value="." onclick="insert('.')">.</button>
+
+      </div>
+
+
+    </div>
+
+
+  <script src="calc.js" charset="utf-8"></script>
+  </body>
+</html>
