@@ -12,3 +12,16 @@ function equal(){
     alert("enter an equation");
   }
 }
+
+function useKeyboard(event){
+        var charCode = (event.which) ? event.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 && charCode > 57) && (charCode < 106 && charCode > 111)){
+          event.preventDefault();
+          alert("That key is not allowed.");
+        }else{
+          var prevKey = document.form.equation.value + event.key;
+          document.getElementById("equation").value = prevKey;
+        }
+
+      }
+
