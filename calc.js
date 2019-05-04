@@ -13,6 +13,8 @@ function equal(){
   }
 }
 
+document.addEventListener("keypress", useKeyboard);
+
 function useKeyboard(event){
         var charCode = (event.which) ? event.which : event.keyCode
         if (charCode > 31 && (charCode < 48 && charCode > 57) && (charCode < 106 && charCode > 111)){
