@@ -13,9 +13,46 @@ function equal(){
   }
 }
 
+
+// document.addEventListener("keypress", function(){
+//     console.log(event);
+// });
+
+
+
+
 document.addEventListener("keypress", useKeyboard);
 
-function useKeyboard(event){
+var abc = ["a", "b", "c"];
+
+
+// function useKeyboard(event){
+//
+//   for (i = 0; i < abc.length; i++){
+//     var key = event.key;
+//     document.form.equation.value = document.form.equation.value + num;
+//     var keynum = insert(num);
+//     if(key === 'a'){
+//       alert("this is restricted.");
+//     }else{
+//       document.getElementById("equation").value = document.form.equation.value;
+//     }
+//
+//   }
+//
+// }
+
+function useKeyboard(event)
+      {
+//          var charCode = (event.which) ? event.which : event.keyCode
+//           if (charCode > 31 && (charCode < 48 || charCode > 57) && (charCode < 106 || charCode > 111)){
+//             return false;
+// }
+//
+//       if (charCode < 106 || charCode > 111){
+//         document.getElementById("equation").value = event.key;
+//                return true;
+//       }
         var charCode = (event.which) ? event.which : event.keyCode
         if (charCode > 31 && (charCode < 48 && charCode > 57) && (charCode < 106 && charCode > 111)){
           event.preventDefault();
@@ -27,3 +64,4 @@ function useKeyboard(event){
 
       }
 
+// TODO: make it so letters are restricted and connot be typed.
